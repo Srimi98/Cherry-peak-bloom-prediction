@@ -17,16 +17,6 @@ pacman::p_load(forecast,timeSeries,tseries,aTSA)
 The data for each of the three main sites is provided as simple text file in CSV format.
 Each file contains the dates of the peak bloom of the cherry trees at the respective sites along with weather credentials which can affect peak bloom dates for the sites.
 
-The six columns in each data file are
-
-* _location_ a human-readable location identifier (`string`).
-* _lat_ (approximate) latitude of the cherry trees (`double`).
-* _long_ (approximate) longitude of the cherry trees (`double`).
-* _alt_ (approximate) altitude of the cherry trees (`double`).
-* _year_ year of the observation (`integer`).
-* *bloom_date* date of peak bloom of the cherry trees (ISO 8601 date `string`). The "peak bloom date" may be defined differently for different sites
-* *bloom_doy* days since January 1st of the year until peak bloom (`integer`). January 1st corresponds to `1`.
-
 ## Reading the data into R
 
 data=read.csv("data/Washington Dc data.csv")            ## For Washington Dc USA
